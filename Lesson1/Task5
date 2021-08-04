@@ -1,0 +1,14 @@
+cost = float(input("Введите значение издержек"))
+profit = float(input("Введите значение прибыли"))
+if cost > profit:
+    print("Ваша фирма приносит убыток")
+elif cost == profit:
+    print("Ваша фирмма работает без прибыли и без убытка")
+else:
+    print("Ваша фирма приносит прибыль")
+    revenue = float(input("Введите значение выручки"))
+    asset = revenue / profit
+    print(f"Рентабельность фирмы составляет{asset}")
+    staff = int(input("Введите количество персонала"))
+    asset_per_staff = profit / staff
+    print(f"Прибыль фирмы в расчете на одного сотрудника составляет {asset_per_staff}")
