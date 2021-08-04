@@ -1,0 +1,5 @@
+n = int(input("Введите число"))
+n1 = int(str(n) + str(n))
+n2 = int(str(n) + str(n) + str(n))
+total = int(n + n1 + n2)
+print(f'Ваше число {total}')
