@@ -1,0 +1,12 @@
+count = int(input("Введите количество элементов списка "))
+list1 = []
+i = 0
+a = 0
+while i < count:
+    list1.append(input("Введите следующее значение списка "))
+    i += 1
+
+for elem in range(int(len(list1) / 2)):
+    list1[a], list1[a + 1] = list1[a + 1], list1[a]
+    a += 2
+print(list1)
