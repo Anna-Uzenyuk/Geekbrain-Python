@@ -1,0 +1,15 @@
+list1 = [8, 12, 5, 5, 2]
+digit = int(input("Введите число до 20 "))
+while digit < 20:
+    for el in range(len(list1)):
+        if list1[el] == digit:
+            list1.insert(el + 1, digit)
+            break
+        elif list1[0] < digit:
+            list1.insert(0, digit)
+        elif list1[-1] > digit:
+            list1.append(digit)
+        elif list1[el] > digit and list1[el + 1] < digit:
+            list1.insert(el + 1, digit)
+    print(f"рейтинг - {list1}")
+    digit = int(input("Введите число до 20"))
