@@ -1,0 +1,7 @@
+string1 = input("введите строку ")
+word1 = []
+i = 1
+for el in range(string1.count(' ') + 1):
+    word1 = string1.split()
+    print(f" {i} {word1[el][0:10]}")
+    i += 1
