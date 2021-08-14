@@ -1,0 +1,9 @@
+def my_func(x, y):
+    return x ** y
+
+
+print(my_func(10, -2))
+
+def x_pow(x, y):
+    return pow(x,y)
+print(x_pow(10, -2))
