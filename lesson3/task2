@@ -1,0 +1,12 @@
+def intro(**data):
+    for key, value in data.items():
+        print("{} is {}".format(key, value))
+
+
+name = input('enter name')
+surname = input('enter surname')
+year = int(input('enter year'))
+city = input('enter city')
+email = input('enter email')
+telephone = input('input telephone')
+intro(Firstname=name, Lastname=surname, Age=year, mail=email,Phone=telephone)
